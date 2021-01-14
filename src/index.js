@@ -51,6 +51,8 @@ console.log(c);
  * デフォルト値
  */
 const sayHello = (sayHelloName = "Guest") => console.log(`Hi ${sayHelloName}`);
+sayHello(); // 引数に何も指定していない場合、デフォルト値として'Guest'が適応される。
+// ※デフォルト値の指定が無い場合、undefinedが引数に渡る。
 
 /**
  * スプレッド構文
@@ -67,5 +69,8 @@ arr2[0] = 99;
 // スプレッド構文を用いた場合、参照渡しは発生しない。
 const arr3 = [...arr1];
 arr3[0] = 11;
-console.log(arr1);
-console.log(arr3);
+// console.log(arr1);
+// console.log(arr3);
+// 配列結合
+const arr4 = [...arr1, ...arr3];
+console.log(arr4);
