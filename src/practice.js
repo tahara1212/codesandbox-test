@@ -4,7 +4,6 @@
 const myname = "thrl";
 const age = 29;
 const message = `My name is ${myname}, age is ${age}`;
-
 /**
  * アロー関数
  */
